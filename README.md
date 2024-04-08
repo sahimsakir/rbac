@@ -64,3 +64,9 @@ $ npm run dev
 ```
 $ php artisan serve
 ```
+
+### Login Details
+```
+user: superadmin@gmail.com
+pass: 123456
+```
