@@ -96,7 +96,9 @@
                                     <i class="nav-icon fa-solid fa-cart-shopping"></i>
                                     <p>
                                         Products
-                                        <span class="badge badge-info right">6</span>
+                                        @if($productCountLast10Days > 0)
+                                        <span class="badge badge-info right">New {{$productCountLast10Days}}</span>
+                                        @endif
                                     </p>
                                 </a>
                             </li>
