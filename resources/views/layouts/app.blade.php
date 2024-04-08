@@ -129,7 +129,7 @@
                         @can('permission-list')
                             <li class="nav-item">
                                 <a href="{{ route('permissions.index') }}" class="nav-link">
-                                    <i class="nav-icon fa-solid fa-person-military-to-person"></i>
+                                    <i class="nav-icon fa-solid fa-person-military-pointing"></i>
                                     <p>
                                         Permissions
                                     </p>
