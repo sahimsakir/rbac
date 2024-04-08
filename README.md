@@ -1,11 +1,11 @@
 # Developing a Role Back Access Control using Laravel
-This is a demo application showing how to build a simple project management software using Laravel and Vue. 
+This demo application shows how to build a simple role back access control software using Laravel. 
 
 ## Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 ### Prerequisites
-What things you need to install the software.
+What things do you need to install the software?
 
 * Git.
 * PHP.
@@ -22,17 +22,18 @@ $ git clone https://github.com/sahimsakir/rbac.git
 
 You can also download the entire repository as a zip file and unpack in on your computer if you do not have git
 
-After cloning the application, you need to install it's dependencies. 
+After cloning the application, you need to install its dependencies. 
 ```
 $ cd rbac
 $ composer install
 ```
 
 ### Setup
-- When you are done with installation, copy the `.env.example` file to `.env`
+- When you are done with the installation, copy the `.env.example` file to `.env`
 ```
 $ cp .env.example .env
 ```
+- Create a database the same as declared as the .env file
 
 - Generate the application key
 ```
