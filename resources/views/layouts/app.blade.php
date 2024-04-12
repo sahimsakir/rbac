@@ -13,7 +13,7 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <!-- Theme style -->
-    <link rel="stylesheet" href="{{ asset('assets/dist/css/adminlte.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/dist/css/adminlte.css') }}">
 </head>
 
 <body class="hold-transition sidebar-mini">
@@ -96,8 +96,8 @@
                                     <i class="nav-icon fa-solid fa-cart-shopping"></i>
                                     <p>
                                         Products
-                                        @if($productCountLast10Days > 0)
-                                        <span class="badge badge-info right">New {{$productCountLast10Days}}</span>
+                                        @if ($productCountLast10Days > 0)
+                                            <span class="badge badge-info right">New {{ $productCountLast10Days }}</span>
                                         @endif
                                     </p>
                                 </a>
