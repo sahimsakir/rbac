@@ -24,20 +24,21 @@
         <tr>
             <th>No</th>
             <th>Name</th>
-            <th>Details</th>
             <th>Image 1</th>
             <th>Image 2</th>
             <th>Image 3</th>
+            <th>Price</th>
+            <th>Quantity</th>
             <th width="280px">Action</th>
         </tr>
         @foreach ($products as $product)
             <tr>
                 <td>{{ ++$i }}</td>
                 <td>{{ $product->name }}</td>
-                <td>{{ $product->detail }}</td>
                 <td>
                     @if ($product->image1)
-                        <img src="{{ asset($product->image1) }}" alt="Image 1" style="max-width: 100px; max-height: 100px;">
+                        <img src="{{ asset($product->image1) }}" alt="Image 1"
+                            style="width: 50px; height: 50px; object-fit: cover;">
                     @else
                         No Image
                     @endif
@@ -45,7 +46,7 @@
                 <td>
                     @if ($product->image2)
                         <img src="{{ asset($product->image2) }}" alt="Image 2"
-                            style="max-width: 100px; max-height: 100px;">
+                            style="width: 50px; height: 50px; object-fit: cover;">
                     @else
                         No Image
                     @endif
@@ -53,11 +54,13 @@
                 <td>
                     @if ($product->image3)
                         <img src="{{ asset($product->image3) }}" alt="Image 3"
-                            style="max-width: 100px; max-height: 100px;">
+                            style="width: 50px; height: 50px; object-fit: cover;">
                     @else
                         No Image
                     @endif
                 </td>
+                <td>{{ $product->price }}</td>
+                <td>{{ $product->quantity }}</td>
                 <td>
                     <form action="{{ route('products.destroy', $product->id) }}" method="POST">
                         <a class="btn btn-info" href="{{ route('products.show', $product->id) }}">Show</a>

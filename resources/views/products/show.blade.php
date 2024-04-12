@@ -41,7 +41,7 @@
             <div class="form-group d-flex flex-column justify-center align-items-center">
                 <strong class="text-center">Image 1:</strong>
                 @if ($product->image1)
-                    <img src="{{ asset($product->image1) }}" alt="Image 1" style="max-width: 100px; max-height: 100px;">
+                    <img src="{{ asset($product->image1) }}" alt="Image 1" style="width: 200px; height: 200px; object-fit: cover;">
                 @else
                     <p>No Image</p>
                 @endif
@@ -51,7 +51,7 @@
             <div class="form-group d-flex flex-column justify-center align-items-center">
                 <strong class="text-center">Image 2:</strong>
                 @if ($product->image2)
-                    <img src="{{ asset($product->image2) }}" alt="Image 2" style="max-width: 100px; max-height: 100px;">
+                    <img src="{{ asset($product->image2) }}" alt="Image 2" style="width: 200px; height: 200px; object-fit: cover;">
                 @else
                     <p>No Image</p>
                 @endif
@@ -61,7 +61,7 @@
             <div class="form-group d-flex flex-column justify-center align-items-center">
                 <strong class="text-center">Image 3:</strong>
                 @if ($product->image3)
-                    <img src="{{ asset($product->image3) }}" alt="Image 3" style="max-width: 100px; max-height: 100px;">
+                    <img src="{{ asset($product->image3) }}" alt="Image 3" style="width: 200px; height: 200px; object-fit: cover;">
                 @else
                     <p>No Image</p>
                 @endif
