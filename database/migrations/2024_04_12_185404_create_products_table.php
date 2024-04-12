@@ -19,9 +19,9 @@ class CreateProductsTable extends Migration
             $table->text('detail')->nullable();
             $table->decimal('price', 8, 2);
             $table->integer('quantity')->unsigned()->default(0);
-            $table->string('image1')->default('assets/images/products/demo.jpg'); // First image field
-            $table->string('image2')->default('assets/images/products/demo.jpg'); // Second image field
-            $table->string('image3')->default('assets/images/products/demo.jpg'); // Third image field
+            $table->string('image1')->nullable()->default('assets/images/products/demo.jpg'); // First image field
+            $table->string('image2')->nullable()->default('assets/images/products/demo.jpg'); // Second image field
+            $table->string('image3')->nullable()->default('assets/images/products/demo.jpg'); // Third image field
             $table->timestamps();
         });
     }

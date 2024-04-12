@@ -60,10 +60,10 @@
                     <strong>Image 1:</strong><br>
                     @if ($product->image1)
                         <img id="imagePreview1" src="{{ asset($product->image1) }}" alt="Image 1"
-                            style="max-width: 200px; max-height: 200px;"><br>
+                            style="max-width: 100px; max-height: 100px;"><br>
                     @else
                         <img id="imagePreview1" src="#" alt="Image 1 Preview"
-                            style="display: none; max-width: 200px; max-height: 200px;"><br>
+                            style="display: none; max-width: 100px; max-height: 100px;"><br>
                     @endif
                     <input type="file" name="image1" class="form-control-file mt-2"
                         onchange="previewImage(this, 'imagePreview1')">
@@ -74,10 +74,10 @@
                     <strong>Image 2:</strong><br>
                     @if ($product->image2)
                         <img id="imagePreview2" src="{{ asset($product->image2) }}" alt="Image 2"
-                            style="max-width: 200px; max-height: 200px;"><br>
+                            style="max-width: 100px; max-height: 100px;"><br>
                     @else
                         <img id="imagePreview2" src="#" alt="Image 2 Preview"
-                            style="display: none; max-width: 200px; max-height: 200px;"><br>
+                            style="display: none; max-width: 100px; max-height: 100px;"><br>
                     @endif
                     <input type="file" name="image2" class="form-control-file mt-2"
                         onchange="previewImage(this, 'imagePreview2')">
@@ -88,10 +88,10 @@
                     <strong>Image 3:</strong><br>
                     @if ($product->image3)
                         <img id="imagePreview3" src="{{ asset($product->image3) }}" alt="Image 3"
-                            style="max-width: 200px; max-height: 200px;"><br>
+                            style="max-width: 100px; max-height: 100px;"><br>
                     @else
                         <img id="imagePreview3" src="#" alt="Image 3 Preview"
-                            style="display: none; max-width: 200px; max-height: 200px;"><br>
+                            style="display: none; max-width: 100px; max-height: 100px;"><br>
                     @endif
                     <input type="file" name="image3" class="form-control-file mt-2"
                         onchange="previewImage(this, 'imagePreview3')">
