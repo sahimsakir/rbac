@@ -54,8 +54,8 @@
             <div class="col-md-4">
                 <div class="form-group">
                     <strong>Image 1:</strong><br>
-                    <img id="imagePreview1" src="#" alt="Image 1 Preview"
-                        style="display: none; width: 100px; height: 100px; object-fit: cover;"><br>
+                    <img id="imagePreview1" src="{{ asset('assets/images/products/demo.jpg') }}" alt="Image 1 Preview"
+                        style="width: 100px; height: 100px; object-fit: cover;"><br>
                     <input type="file" name="image1" class="form-control-file mt-2"
                         onchange="previewImage(this, 'imagePreview1')">
                 </div>
@@ -63,8 +63,8 @@
             <div class="col-md-4">
                 <div class="form-group">
                     <strong>Image 2:</strong><br>
-                    <img id="imagePreview2" src="#" alt="Image 2 Preview"
-                        style="display: none; width: 100px; height: 100px; object-fit: cover;"><br>
+                    <img id="imagePreview2" src="{{ asset('assets/images/products/demo.jpg') }}" alt="Image 2 Preview"
+                        style=" width: 100px; height: 100px; object-fit: cover;"><br>
                     <input type="file" name="image2" class="form-control-file mt-2"
                         onchange="previewImage(this, 'imagePreview2')">
                 </div>
@@ -72,8 +72,8 @@
             <div class="col-md-4">
                 <div class="form-group">
                     <strong>Image 3:</strong><br>
-                    <img id="imagePreview3" src="#" alt="Image 3 Preview"
-                        style="display: none; width: 100px; height: 100px; object-fit: cover;"><br>
+                    <img id="imagePreview3" src="{{ asset('assets/images/products/demo.jpg') }}" alt="Image 3 Preview"
+                        style=" width: 100px; height: 100px; object-fit: cover;"><br>
                     <input type="file" name="image3" class="form-control-file mt-2"
                         onchange="previewImage(this, 'imagePreview3')">
                 </div>
