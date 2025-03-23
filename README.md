@@ -17,34 +17,34 @@ What things do you need to install the software?
 ### Install
 Clone the git repository on your computer
 ```
-$ git clone https://github.com/sahimsakir/rbac.git
+git clone https://github.com/sahimsakir/rbac.git
 ```
 
 You can also download the entire repository as a zip file and unpack in on your computer if you do not have git
 
 After cloning the application, you need to install its dependencies. 
 ```
-$ cd rbac
-$ composer install
+cd rbac
+composer install
 ```
 
 ### Setup
 - When you are done with the installation, copy the `.env.example` file to `.env`
 ```
-$ cp .env.example .env
+cp .env.example .env
 ```
 - Create a database the same as declared as the .env file
 
 - Generate the application key
 ```
-$ php artisan key:generate
+php artisan key:generate
 ```
 
 - Add your database credentials to the necessary `env` fields
 
 - Migrate the application
 ```
-$ php artisan migrate
+php artisan migrate
 ```
 
 - Seed Database
@@ -54,15 +54,15 @@ php artisan db:seed
 
 - Install node modules
 ```
-$ npm install
+npm install
 ```
 ```
-$ npm run dev
+npm run dev
 ```
 
 ### Run the application
 ```
-$ php artisan serve
+php artisan serve
 ```
 
 ### Login Details
